@@ -12,7 +12,4 @@ iverilog -o pipe_mips32.vvp pipe_mips32.v testbench_mips32.v
 vvp pipe_mips32.vvp
 gtkwave pipe_mips32.vcd
 
-<p align="center">
-  <img src="waveform.png" width="600">
-</p>
 
