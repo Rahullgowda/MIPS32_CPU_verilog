@@ -1,15 +1,18 @@
-# MIPS32_CPU_verilog
-5-stage pipelined MIPS32 CPU written in Verilog with testbench and GTKWave simulation.
+# MIPS32 Pipeline CPU (Verilog)
 
-# MIPS-32 Pipelined CPU in Verilog
-5-stage pipeline (IF, ID, EX, MEM, WB)  
-Testbench included  
-Simulated using Icarus Verilog + GTKWave  
+This project implements a **5-stage pipelined MIPS32 processor** in Verilog, including a testbench and waveform verification using **Icarus Verilog** and **GTKWave**.  
 
-### How to Run
-```bash
-iverilog -o pipe_mips32.vvp pipe_mips32.v testbench_mips32.v
-vvp pipe_mips32.vvp
-gtkwave pipe_mips32.vcd
+## 📌 Highlights
+- 5 classic pipeline stages: **IF → ID → EX → MEM → WB**
+- Supports **R-type, I-type, Load/Store, Branch, Halt**
+- Written in **Verilog HDL** with proper testbench
+- Simulation and waveform analysis using **GTKWave**
+- Beginner-friendly CPU design project  
+
+## 🛠️ How to Run
+1. Compile with Icarus Verilog:
+   ```bash
+   iverilog -o pipe_mips32.vvp pipe_mips32.v testbench_mips32.v
+   vvp pipe_mips32.vvp
 
 
